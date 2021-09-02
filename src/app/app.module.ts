@@ -24,7 +24,7 @@ import { ClientsManagementComponent } from './components/private/admin/clients-m
 import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { CategoryAddComponent } from './components/private/admin/category/category-add/category-add.component';
 
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,7 +55,9 @@ import { CategoryAddComponent } from './components/private/admin/category/catego
     BrowserModule,
     AppRoutingModule
     ,AppRoutingModule, FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+   
   ],
   
   providers: [],
